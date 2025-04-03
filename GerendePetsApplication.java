@@ -1,13 +1,13 @@
-package com.gerendePets;
+spring.datasource.url=jdbc:mysql://localhost:3306/usuarios
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username=root
+spring.datasource.password=P@ssw0rd
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-public class GerendePetsApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(GerendePetsApplication.class, args);
-	}
-
-}
+spring.jpa.database=mysql
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.use_sql_comments=true
+spring.jpa.defer-datasource-initialization=true
+spring.jpa.hibernate.ddl-auto=update
